@@ -1,133 +1,229 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-
-import ContactCTA from '../components/ContactCTA.astro';
-import Hero from '../components/Hero.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ContactCTA from "../components/ContactCTA.astro";
+import Hero from "../components/Hero.astro";
 ---
 
-<BaseLayout title="About | Nipun Fernando" description="About Nipun Fernando Lorem Ipsum">
-	<div class="stack gap-20">
-		<main class="wrapper about">
-			<Hero
-				title="About"
-				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
-			>
-				<img
+<BaseLayout
+  title="About | Nipun Fernando"
+  description="About Nipun Fernando Lorem Ipsum"
+>
+  <div class="stack gap-20">
+    <main class="wrapper about">
+      <Hero
+        title="About"
+        tagline="Thanks for stopping by. Read below to learn more about myself and my background."
+      >
+        <!-- <img
 					width="1553"
 					height="873"
 					src="/assets/at-work.jpg"
 					alt="Nipun Fernando at work with a colleague"
-				/>
-			</Hero>
+				/> -->
+      </Hero>
 
-			<section>
-				<h2 class="section-title">Background</h2>
-				<div class="content">
-					<div class="background-description-section">
-						<p>
-							I am a passionate Software Engineer with over 6 years of professional experience in developing robust web applications and enterprise software solutions. 
-							Throughout my career, I've worked with diverse technologies and frameworks, specializing in full-stack development and cloud architecture.
-						</p>
-					</div>
-					<div class="background-description-section">
-						<p>
-							My expertise spans across modern web technologies, including <b>JavaScript/TypeScript</b>, <b>React</b>, <b>Next.js</b>, <b>Node.js</b>, and various cloud platforms. 
-							I have a strong foundation in software architecture principles and agile methodologies, enabling me to deliver scalable and maintainable solutions.
-						</p>
-					</div>
-					<div class="background-description-section">
-						<p>
-							I'm also proficient in <b>C/C++</b> and embedded systems engineering, having worked on various hardware-software integration projects. 
-							Additionally, I have experience in cross-platform mobile application development using <b>Flutter</b>, allowing me to create efficient and 
-							responsive applications for both iOS and Android platforms.
-						</p>
-					</div>
-					<div class="background-description-section">
-						<p>
-							I thrive in collaborative environments and have successfully led multiple project teams, implementing best practices and mentoring junior developers. 
-							I'm constantly learning and adapting to new technologies, ensuring that I stay current with industry trends and innovations.
-						</p>
-					</div>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title">Education</h2>
-				<div class="content">
-					<p>Computer Engineering, B.S</p>
-					<p>Minnesota State University, Mankato</p>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title">Skills</h2>
-				<div class="content">
-					<p>officia unde omnis</p>
-				</div>
-			</section>
-		</main>
+      <section>
+        <h2 class="section-title">Background</h2>
+        <div class="content">
+          <div class="background-description-section">
+            <p>
+              I am a passionate Software Engineer with over <b>6 years</b> of professional
+              experience in developing robust web applications and enterprise software
+              solutions. Throughout my career, I've worked with diverse technologies
+              and frameworks, specializing in full-stack development and cloud architecture.
+            </p>
+          </div>
+          <div class="background-description-section">
+            <p>
+              My expertise spans across modern web technologies, including <b
+                >JavaScript/TypeScript</b
+              >, <b>React</b>, <b>Next.js</b>, <b>Node.js</b>, and various cloud
+              platforms. I have a strong foundation in software architecture
+              principles and agile methodologies, enabling me to deliver
+              scalable and maintainable solutions.
+            </p>
+          </div>
+          <div class="background-description-section">
+            <p>
+              I'm also proficient in <b>C/C++</b> and embedded systems engineering,
+              having worked on various hardware-software integration projects. Additionally,
+              I have experience in cross-platform mobile application development
+              using <b>Flutter</b>, allowing me to create efficient and
+              responsive applications for both iOS and Android platforms.
+            </p>
+          </div>
+          <div class="background-description-section">
+            <p>
+              I thrive in collaborative environments and have successfully led
+              multiple project teams, implementing best practices and mentoring
+              junior developers. I'm constantly learning and adapting to new
+              technologies, ensuring that I stay current with industry trends
+              and innovations.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">Skills</h2>
+        <div class="content">
+          <fieldset>
+            <legend>Languages</legend>
+            <div class="skillPill skillPillLanguages">JavaScript</div>
+            <div class="skillPill skillPillLanguages">C++</div>
+            <div class="skillPill skillPillLanguages">C#</div>
+            <div class="skillPill skillPillLanguages">Python</div>
+            <div class="skillPill skillPillLanguages">Dart</div>
+            <div class="skillPill skillPillLanguages">Java</div>
+            <div class="skillPill skillPillLanguages">PHP</div>
+          </fieldset>
+          <fieldset>
+            <legend>Frameworks</legend>
+            <div class="skillPill skillPillWeb">Flutter</div>
+            <div class="skillPill skillPillWeb">React</div>
+            <div class="skillPill skillPillWeb">Angular</div>
+            <div class="skillPill skillPillWeb">Vue.JS</div>
+            <div class="skillPill skillPillWeb">Next.JS</div>
+            <div class="skillPill skillPillWeb">Astro</div>
+            <div class="skillPill skillPillWeb">Express.JS</div>
+            <div class="skillPill skillPillWeb">Node.JS</div>
+            <div class="skillPill skillPillWeb">ASP.NET</div>
+          </fieldset>
+          <fieldset>
+            <legend>Databases</legend>
+            <div class="skillPill skillPillDatabases">PostgreSQL</div>
+            <div class="skillPill skillPillDatabases">MySQL</div>
+            <div class="skillPill skillPillDatabases">MongoDB</div>
+            <div class="skillPill skillPillDatabases">SQLite</div>
+            <div class="skillPill skillPillDatabases">Neo4j</div>
+          </fieldset>
+          <fieldset>
+            <legend>DevOps</legend>
+            <div class="skillPill skillPillDevOps">GitHub Actions</div>
+            <div class="skillPill skillPillDevOps">Jenkins</div>
+            <div class="skillPill skillPillDevOps">Docker</div>
+            <div class="skillPill skillPillDevOps">Kubernetes</div>
+            <div class="skillPill skillPillDevOps">Terraform</div>
+            <div class="skillPill skillPillDevOps">OpenStack</div>
+            <div class="skillPill skillPillDevOps">Azure</div>
+            <div class="skillPill skillPillDevOps">AWS</div>
+          </fieldset>
+          <!-- <fieldset>
+            <legend>Misc</legend>
+            <div class="skillPill skillPillMisc">OpenGL</div>
+            <div class="skillPill skillPillMisc">CUDA</div>
+            <div class="skillPill skillPillMisc">Unreal Engine</div>
+          </fieldset> -->
+        </div>
+      </section>
+      <section>
+        <h2 class="section-title">Education</h2>
+        <div class="content">
+          <p>Bachelor of Science in <b>Computer Engineering</b></p>
+          <p>Minnesota State University, Mankato</p>
+        </div>
+      </section>
+    </main>
 
-		<ContactCTA />
-	</div>
+    <ContactCTA />
+  </div>
 </BaseLayout>
 
 <style>
-	.background-description-section {
-		/* background-color: antiquewhite; */
-		padding-bottom: 0.7rem;
-		border-radius: 1rem;
-	}
-	.about {
-		display: flex;
-		flex-direction: column;
-		gap: 3.5rem;
-	}
+  b {
+    font-weight: 800;
+    color: #d1dfff;
+  }
+  fieldset {
+    border: 1px solid #134ca1;
+    border-radius: 1rem;
+  }
+  legend {
+    padding: 0.1rem 0.5rem;
+    font-weight: 500;
+    color: #134ca1;
+  }
+  .skillPillMisc {
+    background: linear-gradient(45deg, #ff5e62, #b31414);
+  }
+  .skillPillWeb {
+    background: linear-gradient(45deg, #007cf0, #00dfd8);
+  }
+  .skillPillDevOps {
+    background: linear-gradient(45deg, #9933ff, #0051ff);
+  }
+  .skillPillDatabases {
+    background: linear-gradient(45deg, #11ca8c, #46c000);
+  }
+  .skillPillLanguages {
+    background: linear-gradient(45deg, #7928ca, #ff0080);
+  }
 
-	img {
-		margin-top: 1.5rem;
-		border-radius: 1.5rem;
-		box-shadow: var(--shadow-md);
-	}
+  .skillPill {
+    padding: 0.5rem 0.8rem;
+    margin: 0.5rem 0.2rem 0 0;
+    border-radius: 9999px;
+    display: inline-block;
+    color: white;
+    font-weight: 500;
+  }
+  .background-description-section {
+    /* background-color: antiquewhite; */
+    padding-bottom: 0.7rem;
+    border-radius: 1rem;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+  }
 
-	section {
-		display: flex;
-		flex-direction: column;
-		gap: 0.5rem;
-		color: var(--gray-200);
-	}
+  img {
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow-md);
+  }
 
-	.section-title {
-		grid-column-start: 1;
-		font-size: var(--text-xl);
-		color: var(--gray-0);
-	}
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--gray-200);
+  }
 
-	.content {
-		grid-column: 2 / 4;
-	}
+  .section-title {
+    grid-column-start: 1;
+    font-size: var(--text-xl);
+    color: var(--gray-0);
+  }
 
-	.content :global(a) {
-		text-decoration: 1px solid underline transparent;
-		text-underline-offset: 0.25em;
-		transition: text-decoration-color var(--theme-transition);
-	}
+  .content {
+    grid-column: 2 / 4;
+  }
 
-	.content :global(a:hover),
-	.content :global(a:focus) {
-		text-decoration-color: currentColor;
-	}
+  .content :global(a) {
+    text-decoration: 1px solid underline transparent;
+    text-underline-offset: 0.25em;
+    transition: text-decoration-color var(--theme-transition);
+  }
 
-	@media (min-width: 50em) {
-		.about {
-			display: grid;
-			grid-template-columns: 1fr 60% 1fr;
-		}
+  .content :global(a:hover),
+  .content :global(a:focus) {
+    text-decoration-color: currentColor;
+  }
 
-		.about > :global(:first-child) {
-			grid-column-start: 2;
-		}
+  @media (min-width: 50em) {
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 60% 1fr;
+    }
 
-		section {
-			display: contents;
-			font-size: var(--text-lg);
-		}
-	}
+    .about > :global(:first-child) {
+      grid-column-start: 2;
+    }
+
+    section {
+      display: contents;
+      font-size: var(--text-lg);
+    }
+  }
 </style>
